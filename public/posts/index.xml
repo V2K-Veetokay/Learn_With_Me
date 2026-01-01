@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on</title><link>/posts/</link><description>Recent content in Blog on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>/posts/This-is-not-working/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>/posts/This-is-not-working/</guid><description>&lt;h2 id="hugo-notes"&gt;Hugo notes&lt;a class="anchor" href="#hugo-notes"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&lt;a class="book-btn"href="/docs/example"&gt;Explore&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;---
+bookHidden: true
+---
+
+# This page is hidden in menu&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="snippets-for-blogs"&gt;snippets for blogs&lt;a class="anchor" href="#snippets-for-blogs"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;---
+date: 2025-12-29
+linktitle: This is not working
+menu:
+ main:
+ parent: tutorials
+prev: /tutorials/Hugo
+title: Hugo
+weight: 10
+---&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;+++
+title = &amp;#34;Getting Started with Hugo&amp;#34;
+description = &amp;#34;&amp;#34;
+tags = [
+ &amp;#34;go&amp;#34;,
+ &amp;#34;golang&amp;#34;,
+ &amp;#34;hugo&amp;#34;,
+ &amp;#34;development&amp;#34;,
+]
+date = &amp;#34;2014-04-02&amp;#34;
+categories = [
+ &amp;#34;Development&amp;#34;,
+ &amp;#34;golang&amp;#34;,
+]
+menu = &amp;#34;main&amp;#34;
++++&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
