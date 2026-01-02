@@ -6,8 +6,8 @@ weight: 1
 # What are we going to learn in this Unit?
 
 ## Basics of programming
-  1. Approaches to problem solving
-  2. Use of high level programming language for systematic development of programs
+  1. [Approaches to problem solving](Basics-of-Programming/111.-Approaches-to-problem-solving/)
+  2. [Use of high level programming language for systematic development of programs](/Basics-of-Programming/112.-Use-of-high-level-programming-language-for-systematic-development-of-programs)
   3. Concept of algorithm and flowchart
   4. Concept and role of structured programming
 

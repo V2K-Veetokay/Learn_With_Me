@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on</title><link>https://v2k-veetokay.github.io/Learn_From_me/posts/</link><description>Recent content in Blog on</description><generator>Hugo</generator><language>en</language><atom:link href="https://v2k-veetokay.github.io/Learn_From_me/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>https://v2k-veetokay.github.io/Learn_From_me/posts/This-is-not-working/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_From_me/posts/This-is-not-working/</guid><description>&lt;h2 id="hugo-notes"&gt;Hugo notes&lt;a class="anchor" href="#hugo-notes"&gt;#&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on</title><link>https://v2k-veetokay.github.io/Learn_From_me/posts/</link><description>Recent content in Blog on</description><generator>Hugo</generator><language>en</language><atom:link href="https://v2k-veetokay.github.io/Learn_From_me/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Finally website is live now!!!</title><link>https://v2k-veetokay.github.io/Learn_From_me/posts/Finally-website-is-live/</link><pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_From_me/posts/Finally-website-is-live/</guid><description>&lt;p&gt;Today, 2 jan 2026, website is working and uploaded to github pages:)&lt;/p&gt;</description></item><item><title>Hugo</title><link>https://v2k-veetokay.github.io/Learn_From_me/posts/This-is-not-working/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_From_me/posts/This-is-not-working/</guid><description>&lt;h2 id="hugo-notes"&gt;Hugo notes&lt;a class="anchor" href="#hugo-notes"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;&lt;a class="book-btn"href="https://v2k-veetokay.github.io/Learn_From_me/docs/example"&gt;Explore&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;---
 bookHidden: true
 ---
@@ -29,4 +29,16 @@ categories = [
  &amp;#34;golang&amp;#34;,
 ]
 menu = &amp;#34;main&amp;#34;
-+++&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
++++&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;---
+author: &amp;#34;Michael Henderson&amp;#34;
+date: 2014-09-28
+linktitle: Creating a New Theme
+menu:
+ main:
+ parent: tutorials
+next: /tutorials/github-pages-blog
+prev: /tutorials/automated-deployments
+title: Creating a New Theme
+weight: 10
+---&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
