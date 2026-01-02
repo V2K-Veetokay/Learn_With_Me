@@ -1,14 +1,14 @@
 {
   "name": "",
   "short_name": "",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/Learn_From_me/",
+  "scope": "/Learn_From_me/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/Learn_From_me/favicon.svg",
       "sizes": "512x512"
     }
   ]
