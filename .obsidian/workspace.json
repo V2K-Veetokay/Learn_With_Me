@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/C programming/Unit-1/Basics of Programming/112. Use of high level programming language for systematic development of programs.md",
+                "file": "content/docs/Notes/C programming/Unit-1/Basics of Programming/113. Concept of algorithm and flowchart.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "112. Use of high level programming language for systematic development of programs"
+              "title": "113. Concept of algorithm and flowchart"
             }
           },
           {
@@ -199,11 +199,18 @@
   },
   "active": "04768300abbaa436",
   "lastOpenFiles": [
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/111. Approaches to problem solving.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/112. Use of high level programming language for systematic development of programs.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/113. Concept of algorithm and flowchart.md",
+    "content/docs/Notes/C programming/Unit-1/_index.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
+    "public/en.search.min.d3336fa16bc14a9a0544c1f55df263adb2aeea210e2642470231b92a750de69d.js",
+    "public/en.search-data.min.7e2e4a62cb8c92faccaa2a451e23c75e502d5dce3c59ac16c07874f03c0601da.json",
+    "public/en.search.min.f9c6a81e58aa17329587017ba3718f87b2bd526f5f6416d6c4480cc4f75fd13d.js",
+    "public/en.search-data.min.c734b480308f987c093c35545f814db1f2ee4e66b1482b7ce1ccdc4f39e4c908.json",
     "public/en.search.min.4fb87917082324e07c11542e279790984714043bbe80d260c0a161a7cc355a62.js",
     "public/en.search-data.min.4fc3455ca83c991fe52d02f609ca6b5b8887d7ba07af4bed82ff9e23ab58ea42.json",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/111. Approaches to problem solving.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/121. History of C.md",
-    "content/docs/Notes/C programming/Unit-1/_index.md",
     "themes/hugo-book/exampleSite/content.en/docs/example/table-of-contents/_index.md",
     "themes/hugo-book/exampleSite/content.en/docs/example/_index.md",
     "public/en.search.min.47c1462065e6081a3705477ed61db11c93022417d99f40e0ef64139e0f2f33e6.js",
@@ -212,15 +219,9 @@
     "themes/hugo-book/exampleSite/content.en/docs/shortcodes/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/122. Salient features of C.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/112. Use of high level programming language for systematic development of programs.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
     "public/en.search.min.dedd7babb625df234d063363afef0e412c5a1b58f60a5d53ed628f059aeff538.js",
     "public/en.search-data.min.d26d135d5afa7115c016996e64b674eb57faa010029a4df85fc08bf8436d2bb0.json",
     "content/posts/Finally website is live!!!.md",
-    "public/posts/Finally-website-is-live/index.html",
-    "public/posts/Finally-website-is-live",
-    "public/en.search.min.6228860ac1c512a48a55b51569940caf2a82b91a0d928dd25b6e27819f126aa2.js",
-    "public/en.search-data.min.540d4b46bacdabe4870010a539616a48bbccd98a3b443508eb9e21ae04f5d2f9.json",
     "themes/hugo-book/exampleSite/content.en/posts/migrate-from-jekyll.md",
     "themes/hugo-book/exampleSite/content.en/posts/hugoisforlovers.md",
     "themes/hugo-book/exampleSite/content.en/posts/goisforlovers.md",
@@ -233,7 +234,6 @@
     "content/docs/Notes/DSA/_index.md",
     "content/docs/Notes/Python/_index.md",
     "content/docs/Notes/C programming/_index.md",
-    "content/docs/Notes/DSA",
     "content/docs/Notes/C programming/Unit-2/_index.md",
     "public/favicon.png",
     "public/icons/edit.svg",
