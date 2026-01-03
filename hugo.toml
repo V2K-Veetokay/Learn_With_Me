@@ -51,7 +51,7 @@ disableKinds = ['taxonomy']
   # (Optional, default none) Set template for edit page link.
   # When set enabled 'Edit this page' link in the footer of the page.
   # Param is executed as template using .Site, .Page and .Path as context.
-  BookEditLink = 'https://github.com/V2K-Veetokay/Learn_With_Me'
+  # BookEditLink = 'https://github.com/V2K-Veetokay/Learn_With_Me'
 
   # (Optional, default 'January 2, 2006') Configure the date format used on the pages
   # - In git information
