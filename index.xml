@@ -79,10 +79,26 @@ weight: 10
 &lt;p&gt;In the past, when computers first appeared, programs were written on punch cards (sheets of stiff paper with holes punched to represent data). Early machines used vacuum tubes; these were later replaced by transistors. Transistors enabled the creation of registers and other compact circuitry, which eventually led to integrated circuits.&lt;/p&gt;
 &lt;p&gt;These circuits perform calculations by taking inputs as 0s and 1s. Binary is hard for humans to read, so we encoded binary as hexadecimal. Later we created an abstraction over 0s and 1s called assembly language. Assembly made programming faster, but its learning curve was steep and writing large programs remained difficult. High-level programming languages were then developed—Fortran, COBOL, Lisp, BASIC. &lt;strong&gt;In 1972 at Bell Labs, &lt;em&gt;Dennis Ritchie&lt;/em&gt; created a legendary language: C.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-Programming/113.-Concept-of-algorithm-and-flowchart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-Programming/113.-Concept-of-algorithm-and-flowchart/</guid><description>&lt;h1 id="concept-of-algorithm-and-flowchart"&gt;Concept of algorithm and flowchart&lt;a class="anchor" href="#concept-of-algorithm-and-flowchart"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id="algorithm"&gt;Algorithm&lt;a class="anchor" href="#algorithm"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;$define algorithum
-$why we use it? (Advantages)
-$disadvantages&lt;/p&gt;
-&lt;h2 id="flowchart"&gt;Flowchart&lt;a class="anchor" href="#flowchart"&gt;#&lt;/a&gt;&lt;/h2&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/121.-History-of-C/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/121.-History-of-C/</guid><description>&lt;h1 id="history-of-c"&gt;History of C&lt;a class="anchor" href="#history-of-c"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;An algorithm is a clear list of steps you follow to solve a problem or do a task.&lt;/p&gt;
+&lt;h3 id="example-making-a-peanut-butter--jelly-sandwich"&gt;Example: Making a Peanut Butter &amp;amp; Jelly Sandwich&lt;a class="anchor" href="#example-making-a-peanut-butter--jelly-sandwich"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Get ingredients:&lt;/strong&gt; bread, peanut butter, jelly, knife, plate.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spread peanut butter&lt;/strong&gt; on one slice of bread.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spread jelly&lt;/strong&gt; on the other slice.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Put slices together&lt;/strong&gt; with spreads facing each other.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cut the sandwich&lt;/strong&gt; in half (optional).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Serve&lt;/strong&gt; on the plate.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That list of steps is an algorithm.&lt;/p&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-Programming/114.-Concept-and-role-of-structured-programming/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-Programming/114.-Concept-and-role-of-structured-programming/</guid><description>&lt;h1 id="concept-and-role-of-structured-programming"&gt;Concept and role of structured programming&lt;a class="anchor" href="#concept-and-role-of-structured-programming"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="what-is-structured-programming"&gt;What is Structured Programming?&lt;a class="anchor" href="#what-is-structured-programming"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Structured programming is a way to write code so it&amp;rsquo;s easy to read, understand, and fix — like writing clear instructions for someone to follow.&lt;/p&gt;
+&lt;h3 id="imagine-a-recipe"&gt;Imagine a Recipe&lt;a class="anchor" href="#imagine-a-recipe"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Recipe steps are small and clear.&lt;/strong&gt; You don’t mix lots of things at once.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Each step does one job.&lt;/strong&gt; “Chop onions” is separate from “cook onions.”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You follow the steps in order, or repeat them if needed.&lt;/strong&gt; No jumping randomly around the cookbook.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Structured programming makes code like that recipe.&lt;/p&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/121.-History-of-C/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/121.-History-of-C/</guid><description>&lt;h1 id="history-of-c"&gt;History of C&lt;a class="anchor" href="#history-of-c"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id="who-made-the-c-programming-language"&gt;Who made the C programming language?&lt;a class="anchor" href="#who-made-the-c-programming-language"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote class='book-hint '&gt;
 &lt;p&gt;Denis Richard&lt;/p&gt;
