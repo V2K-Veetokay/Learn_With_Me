@@ -1,8 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/</link><description>Recent content on</description><generator>Hugo</generator><language>en</language><atom:link href="https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/121.-History-of-C/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/121.-History-of-C/</guid><description>&lt;h1 id="history-of-c"&gt;History of C&lt;a class="anchor" href="#history-of-c"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id="who-made-the-c-programming-language"&gt;Who made the C programming language?&lt;a class="anchor" href="#who-made-the-c-programming-language"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="origin"&gt;Origin&lt;a class="anchor" href="#origin"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote class='book-hint '&gt;
-&lt;p&gt;Denis Richard&lt;/p&gt;
-&lt;/blockquote&gt;&lt;h2 id="when-is-was-written"&gt;When is was written?&lt;a class="anchor" href="#when-is-was-written"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Developed at Bell Labs in early 1970s by Dennis Ritchie.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2 id="purpose"&gt;Purpose&lt;a class="anchor" href="#purpose"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote class='book-hint '&gt;
-&lt;p&gt;1972&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/122.-Salient-features-of-C/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/122.-Salient-features-of-C/</guid><description>&lt;p&gt;hello&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Created to implement the UNIX operating system and for system programming.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2 id="key-features"&gt;Key features&lt;a class="anchor" href="#key-features"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote class='book-hint '&gt;
+&lt;p&gt;Low-level memory access, pointers, simple keywords, structured programming, and efficiency.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2 id="standardization"&gt;Standardization&lt;a class="anchor" href="#standardization"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote class='book-hint '&gt;
+&lt;p&gt;ANSI C standardized in 1989; later ISO updates include C99, C11, C18.&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/122.-Salient-features-of-C/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/122.-Salient-features-of-C/</guid><description>&lt;h1 id="salient-features-of-c"&gt;Salient features of C&lt;a class="anchor" href="#salient-features-of-c"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote class='book-hint '&gt;
+&lt;p&gt;We will be able to understand what all these term mean:)&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2 id="salient-features-of-c-1"&gt;Salient features of C&lt;a class="anchor" href="#salient-features-of-c-1"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Simplicity:&lt;/strong&gt; Compact set of keywords and core concepts (variables, control flow, functions, pointers) makes C easy to learn and use for systems-level programming.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Procedural programming:&lt;/strong&gt; Supports structured programming with functions, enabling modular, top-down design and clear control flow.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Low-level access:&lt;/strong&gt; Direct manipulation of memory via pointers and explicit memory management (malloc/free) allows fine-grained control over hardware and performance.&lt;/p&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/123.-Structure-of-C-program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/C-programming/Unit-1/Basics-of-C/123.-Structure-of-C-program/</guid><description>&lt;h1 id="structure-of-c-program"&gt;Structure of C program&lt;a class="anchor" href="#structure-of-c-program"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="this-is-a-program"&gt;This is a Program:&lt;a class="anchor" href="#this-is-a-program"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
+
+int main(){
+	int a = 1, b = 2;
+	int c = a+b;
+	
+	printf(&amp;#34;%d&amp;#34;,c);
+	
+	return 0;
+}&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="line-be-line-explanation"&gt;line be line Explanation:&lt;a class="anchor" href="#line-be-line-explanation"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt;: A line in C that begins with &lt;code&gt;#&lt;/code&gt; is a &lt;strong&gt;Pre-processor Directive&lt;/strong&gt; and It is processed before actual compilation to modify source code or include resources.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;include&lt;/code&gt;: It let us add another file with code before our code.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;: It holds the name of the file we want to add. these files end with .h.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stdio.h&lt;/code&gt;: It is a &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;Library function, It adds printf (display output), scanf(take user input).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;: int is a data type that holds Integer number. In this case, it is telling that output of the function is a integer number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main&lt;/code&gt;: It is the name of the function. In every C program there is a &amp;ldquo;main&amp;rdquo; function were we write core program.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;()&lt;/code&gt;: In this case, it holds the data given to a &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;function. this is a main function therefore we leave it empty.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{}&lt;/code&gt;: these hold a block of code. In this case, it is hold all the code of main function.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int a;&lt;/code&gt;: This is how we &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;declare a variable.&lt;/li&gt;
+&lt;li&gt;In this example we are &lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt;Initializing the variable while declaring.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;=&lt;/code&gt;: This is a assigning operator. It assign the variable on the left with the value on the right.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;,&lt;/code&gt;: it let us declare more then one variable.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;;&lt;/code&gt;: this is how a line ends in C. it is like a full stop in English.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;printf&lt;/code&gt;: It is a function that let us print anything on the display.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%d&lt;/code&gt;: this is a place holder for a integer value.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;,c&lt;/code&gt;: It is tell this program to place value that c holds in the place of %d, in this case it is 3.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return&lt;/code&gt;: It returns that ever is written after this, in this case 0 is returned because we declared the function with the &amp;ldquo;int&amp;rdquo; &lt;code&gt;int main&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Library function are the functions that comes with the compiler&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
