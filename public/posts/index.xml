@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/</link><description>Recent content in Blog on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://v2k-veetokay.github.io/Learn_With_Me/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Finally website is live now!!!</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/Finally-website-is-live/</link><pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/posts/Finally-website-is-live/</guid><description>&lt;p&gt;Today, 2 jan 2026, website is working and uploaded to github pages:)&lt;/p&gt;</description></item><item><title>Hugo</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/This-is-not-working/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/posts/This-is-not-working/</guid><description>&lt;h2 id="hugo-notes"&gt;Hugo notes&lt;a class="anchor" href="#hugo-notes"&gt;#&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/</link><description>Recent content in Blog on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://v2k-veetokay.github.io/Learn_With_Me/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Sleep Linux system</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/How-to-sleep-Linux-system/</link><pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/posts/How-to-sleep-Linux-system/</guid><description>&lt;p&gt;&lt;strong&gt;Use systemctl to suspend, hibernate, or hybrid-sleep from a terminal.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Common commands (run as your user with sudo if needed):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Suspend (RAM sleep):
+&lt;code&gt;sudo systemctl suspend&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hibernate (to disk):
+&lt;code&gt;sudo systemctl hibernate&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hybrid-sleep (hibernate then suspend — safe for laptops):
+&lt;code&gt;sudo systemctl hybrid-sleep&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure swap is large enough for hibernate (&amp;gt;= RAM) and hibernation is enabled in your bootloader (resume kernel param).&lt;/li&gt;
+&lt;li&gt;To test without sudo (if polkit permits): systemctl suspend&lt;/li&gt;
+&lt;li&gt;To check available targets: systemctl list-units &amp;ndash;type=target&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Finally website is live now!!!</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/Finally-website-is-live/</link><pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/posts/Finally-website-is-live/</guid><description>&lt;p&gt;Today, 2 jan 2026, website is working and uploaded to github pages:)&lt;/p&gt;</description></item><item><title>Hugo</title><link>https://v2k-veetokay.github.io/Learn_With_Me/posts/This-is-not-working/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/posts/This-is-not-working/</guid><description>&lt;h2 id="hugo-notes"&gt;Hugo notes&lt;a class="anchor" href="#hugo-notes"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;&lt;a class="book-btn"href="https://v2k-veetokay.github.io/Learn_With_Me/docs/example"&gt;Explore&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;---
 bookHidden: true
 ---

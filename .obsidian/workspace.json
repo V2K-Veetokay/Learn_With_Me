@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/C programming/Unit-1/_index.md",
+                "file": "content/docs/Notes/C programming/Unit-1/Basics of C/124. Compiling C program.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "124. Compiling C program"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,19 +198,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "77f4e1eddfe2c0a2",
+  "active": "a0aab7b488e23d7a",
   "lastOpenFiles": [
+    "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/124. Compiling C program.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/125. Link and Run C program.md",
+    "content/docs/Notes/C programming/Unit-1/_index.md",
     "public/logo.png",
     "public/favicon (copy 1).png",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/124. Compiling C program.md",
     "content/posts/How to sleep Linux system.md",
     "content/posts/Finally website is live!!!.md",
     "content/posts/This is not working.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/125. Link and Run C program.md",
-    "content/docs/Notes/C programming/Unit-1/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/121. History of C.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/122. Salient features of C.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/114. Concept and role of structured programming.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/Flowchart.sandwich.png",
     "public/docs/Notes/C-programming/Unit-1/Basics-of-C/123.-Structure-of-C-program/index.html",
@@ -243,7 +244,6 @@
     "themes/hugo-book/exampleSite/content.en/posts/migrate-from-jekyll.md",
     "themes/hugo-book/exampleSite/content.en/posts/hugoisforlovers.md",
     "themes/hugo-book/exampleSite/content.en/posts/goisforlovers.md",
-    "public/icons/edit.svg",
-    "public/icons/menu.svg"
+    "public/icons/edit.svg"
   ]
 }
