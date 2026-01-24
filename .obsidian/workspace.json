@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "123. Structure of C program"
-            }
-          },
-          {
-            "id": "4d1ddc3da3d99e7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
+                "file": "content/docs/Notes/C programming/Unit-1/Basics of C/125. Link and Run C program.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "123. Structure of C program"
+              "title": "125. Link and Run C program"
             }
           },
           {
@@ -213,29 +199,35 @@
   },
   "active": "77f4e1eddfe2c0a2",
   "lastOpenFiles": [
+    "public/logo.png",
+    "public/favicon (copy 1).png",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/124. Compiling C program.md",
+    "content/posts/How to sleep Linux system.md",
+    "content/posts/Finally website is live!!!.md",
+    "content/posts/This is not working.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/125. Link and Run C program.md",
+    "content/docs/Notes/C programming/Unit-1/_index.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/121. History of C.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/122. Salient features of C.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/114. Concept and role of structured programming.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/Flowchart.sandwich.png",
     "public/docs/Notes/C-programming/Unit-1/Basics-of-C/123.-Structure-of-C-program/index.html",
     "public/docs/Notes/C-programming/Unit-1/Basics-of-C/123.-Structure-of-C-program",
     "public/en.search.min.b025290fec37baedec0df1bf1cdc5beddd1ab1f27422b022a3b6076207dc4a76.js",
     "public/en.search-data.min.e918b98ed6538527ba504de9a908f667d2a15f28e061f6d4bc539593080ebdb8.json",
-    "content/docs/Notes/C programming/Unit-1/_index.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/122. Salient features of C.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/121. History of C.md",
     "Basics-of-Programming/111.-Approaches-to-problem-solving.md",
     "Basics-of-Programming",
     "content/docs/Notes/C programming/Unit-1/Basics of C/_index.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/114. Concept and role of structured programming.md",
     "public/index.xml",
     "public/showcases",
     "public/posts/index.html",
     "public/posts",
     "public/docs/Notes/index.html",
-    "public/docs/index.html",
     "public/icons/chevron-right.svg",
     "public/favicon.svg",
     "public/favicon.png",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/113. Concept of algorithm and flowchart.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/Flowchart.sandwich.png",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
     "public/docs/Notes/C-programming/Unit-1/Basics-of-Programming/Flowchart.sandwich.png",
     "public/Unit-1/Flowchart.sandwich.png",
@@ -244,8 +236,6 @@
     "themes/hugo-book/exampleSite/content.en/docs/shortcodes/details.md",
     "themes/hugo-book/exampleSite/content.en/docs/shortcodes/buttons.md",
     "public/Flowchart.sandwich.png",
-    "public/logo.png",
-    "content/posts/Finally website is live!!!.md",
     "themes/hugo-book/exampleSite/content.en/docs/example/table-of-contents/_index.md",
     "themes/hugo-book/exampleSite/content.en/docs/example/_index.md",
     "themes/hugo-book/exampleSite/content.en/_index.md",
@@ -253,10 +243,6 @@
     "themes/hugo-book/exampleSite/content.en/posts/migrate-from-jekyll.md",
     "themes/hugo-book/exampleSite/content.en/posts/hugoisforlovers.md",
     "themes/hugo-book/exampleSite/content.en/posts/goisforlovers.md",
-    "themes/hugo-book/exampleSite/content.en/posts/creating-a-new-theme.md",
-    "content/posts/This is not working.md",
-    "content/showcases.md",
-    "content/docs/Notes/_index.md",
     "public/icons/edit.svg",
     "public/icons/menu.svg"
   ]
