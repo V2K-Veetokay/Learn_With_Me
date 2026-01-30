@@ -8,14 +8,12 @@ weight: 1
 ### Unit-1
 
 #### Basics of programming
-
 	1. Approaches to problem solving
 	2. Use of high level programming language for systematic development of programs
 	3. Concept of algorithm and flowchart
 	4. Concept and role of structured programming
 
 #### Basics of C
-
 	1. History of C
 	2. Salient features of C
 	3. Structure of C Program
