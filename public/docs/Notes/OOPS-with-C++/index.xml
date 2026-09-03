@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/</link><description>Recent content on</description><generator>Hugo</generator><language>en</language><atom:link href="https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/31.-Employee-Class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/31.-Employee-Class/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-C++" data-lang="C++"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&amp;lt;conio.h&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&amp;lt;iostream.h&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&amp;lt;string.h&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Employee&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;private&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; emp_id;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;float&lt;/span&gt; salary;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; address[&lt;span style="color:#ae81ff"&gt;20&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; set_emp_id(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; id){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			emp_id &lt;span style="color:#f92672"&gt;=&lt;/span&gt; id;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;set_salary&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;float&lt;/span&gt; s){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			salary &lt;span style="color:#f92672"&gt;=&lt;/span&gt; s;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;set_address&lt;/span&gt;(count &lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; add[]){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			strncpy(address, add, &lt;span style="color:#ae81ff"&gt;19&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			address[&lt;span style="color:#ae81ff"&gt;19&lt;/span&gt;]&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;\0&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_employee&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			&lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; emp_id;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;float&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_salary&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			&lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; salary
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;char&lt;/span&gt;&lt;span style="color:#f92672"&gt;*&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_address&lt;/span&gt;() &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;			&lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; address;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	Employee emp1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	emp1.set_emp_id(&lt;span style="color:#ae81ff"&gt;101&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	emp1.set_salary(&lt;span style="color:#ae81ff"&gt;50000.50&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	emp1.set_address(&lt;span style="color:#e6db74"&gt;&amp;#34;123 Main Street&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Employee ID: &amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;emp1.get_emp_id()&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Salary: &amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;emp1.get_salary()&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Address: &amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;emp1.get_address()&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>

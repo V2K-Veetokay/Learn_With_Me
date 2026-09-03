@@ -1,0 +1,5 @@
+hugo
+git add .
+git commit -m "commant"
+gir push origin main
+git push origin `git subtree split --prefix public main`:deploy --force
