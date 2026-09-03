@@ -10,7 +10,7 @@ I am Veetokay, I made this to teach what i learn, If I can teach others in a sim
 
 
 {{<button href="/docs/Notes/C programming">}}C Programming{{</button>}}
-{{<button href="/docs/Notes/C++">}}C++{{</button>}}
+{{<button href="/docs/Notes/C++">}}OOPS with C++{{</button>}}
 {{<button href="/posts/Notes/DSA">}}DSA{{</button>}}
 {{<button href="/posts">}}Blog{{</button>}}
 
