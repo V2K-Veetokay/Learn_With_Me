@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/OOPS with C++/31. Employee Class.md",
+                "file": "content/docs/Notes/OOPS with C++/Practice/301. Employee - Basic Pay.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "31. Employee Class"
+              "title": "301. Employee - Basic Pay"
+            }
+          },
+          {
+            "id": "acf50de52f6f9189",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/docs/Notes/OOPS with C++/Practice/302. Point.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "302. Point"
+            }
+          },
+          {
+            "id": "7f0a5d89f38f27f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/docs/Notes/OOPS with C++/Practice/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,46 +214,46 @@
       "bases:Create new base": false
     }
   },
-  "active": "a0aab7b488e23d7a",
+  "active": "acf50de52f6f9189",
   "lastOpenFiles": [
-    "public/docs/Notes/OOPS-with-C++/index.xml",
-    "public/docs/Notes/OOPS-with-C++/31.-Employee-Class/index.html",
-    "public/docs/Notes/OOPS-with-C++/31.-Employee-Class",
-    "public/docs/Notes/OOPS-with-C++/index.html",
-    "public/docs/Notes/OOPS-with-C++",
-    "public/en.search.min.65d61665c6d29b2c2b0d0397f4592dbb034ae558a840fae7e8f2415b09f388eb.js",
-    "public/en.search-data.min.e1ae5c792bf6ba90bdd7141ea32512173f8839b9c3734ae8e71f4c25bbfd1fb8.json",
-    "steps.txt",
-    "README.md",
+    "public/docs/Notes/OOPS-with-C++/Practice/index.xml",
+    "public/docs/Notes/OOPS-with-C++/Practice/302.-Point/index.html",
+    "public/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay/index.html",
+    "public/docs/Notes/OOPS-with-C++/Practice/index.html",
+    "public/docs/Notes/OOPS-with-C++/Practice/302.-Point",
+    "public/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay",
+    "public/docs/Notes/OOPS-with-C++/Practice",
+    "public/docs/Notes/OOPS-with-C++/300.-Type-Conversion-Constructor-Overloading/index.html",
+    "public/docs/Notes/OOPS-with-C++/300.-Type-Conversion-Constructor-Overloading",
+    "public/en.search.min.9fc4ab55986d07b9ec952fc5c36af2c613483de69d028fdc58b13fe73db65360.js",
+    "public/en.search-data.min.3b3068b6819329ce1470ea59cf9e3b483a852bdd986d13c23dee38ba251eccc6.json",
+    "content/docs/Notes/OOPS with C++/Practice/_index.md",
+    "content/docs/Notes/OOPS with C++/Practice/301. Employee - Basic Pay.md",
+    "content/docs/Notes/C programming/Unit-1/_index.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/111. Approaches to problem solving.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/_index.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/121. History of C.md",
+    "content/docs/Notes/OOPS with C++/Practice/302. Point.md",
     "content/docs/Notes/OOPS with C++/31. Employee Class.md",
     "content/docs/Notes/OOPS with C++/_index.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/121. History of C.md",
+    "content/docs/Notes/C programming/_index.md",
+    "content/docs/Notes/C programming/Unit-5/_index.md",
+    "content/docs/Notes/C programming/Unit-4/_index.md",
+    "content/docs/Notes/C programming/Unit-3/_index.md",
+    "content/docs/Notes/C programming/Unit-2/_index.md",
+    "content/docs/Notes/DSA/_index.md",
     "content/docs/Notes/_index.md",
+    "content/docs/Notes/C programming/Unit-1/Basics of C/122. Salient features of C.md",
+    "content/docs/Notes/OOPS with C++/300. Type Conversion - Constructor, Overloading.md",
+    "README.md",
     "content/_index.md",
     "content/showcases.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/_index.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
-    "content/docs/Notes/C programming/Unit-1/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/122. Salient features of C.md",
-    "content/docs/Notes/C programming/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/124. Compiling C program.md",
-    "content/docs/Notes/DSA/_index.md",
-    "content/docs/Notes/C++/Untitled",
     "content/docs/Notes/C++/without-toc.md",
-    "content/docs/Notes/C++/with-toc.md",
-    "archetypes/default.md",
-    "Basics-of-Programming/111.-Approaches-to-problem-solving.md",
-    "content/docs/Notes/DSA/Unit-1/_index.md",
-    "content/docs/Notes/DSA/Unit-5",
-    "content/docs/Notes/DSA/Unit-4",
-    "content/docs/Notes/C programming/Unit-1/Basics of C/125. Link and Run C program.md",
     "public/logo.png",
     "public/favicon (copy 1).png",
-    "content/posts/How to sleep Linux system.md",
-    "content/posts/Finally website is live!!!.md",
-    "content/posts/This is not working.md",
-    "content/docs/Notes/C programming/Unit-1/Basics of Programming/114. Concept and role of structured programming.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/Flowchart.sandwich.png",
     "public/icons/chevron-right.svg",
     "public/favicon.svg",

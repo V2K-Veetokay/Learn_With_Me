@@ -313,6 +313,165 @@ int main(){
 &lt;ul&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;li&gt;Run the program by &lt;code&gt;./output.out&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Showcases</title><link>https://v2k-veetokay.github.io/Learn_With_Me/showcases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/showcases/</guid><description>&lt;!-- raw HTML omitted --&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay/</guid><description>&lt;h4 id="create-a-class-employee-with-basicpay-as-data-member-use-constructors-and-destructor-along-with-display-to-display-valuers-of-employee-object-and-calcgrosssal-method-to-find-out-the-gross-amount-from-the-given-formula-grosssal-basicpay--da--hra-where-da--hra-can-be-calculated-as-follows---if-basicpay-is-greater-than-or-equal-to-8000-da-is-20-of-basic-pay--hra-is-25-of-basic-pay-otherwise-da-is-15-of-basic-pay--hra-is-20-of-basicpay-define-calctax-method-to-calculate-the-income-tax-of-an-employee-using-rate-of-tax-is-20-of-grosssal-if-it-is-less-than-90000-otherwise-tax-is-25-of-grosssal"&gt;Create a class Employee with basicpay as data member. Use constructors and destructor along with display() to display valuers of Employee object and calcGrossSal() method to find out the gross amount from the given formula grosssal= basicpay + DA + HRA where DA &amp;amp; HRA can be calculated as follows: - If basicpay is greater than or equal to 8000 DA is 20% of Basic Pay &amp;amp; HRA is 25% of Basic Pay, otherwise DA is 15% of Basic Pay &amp;amp; HRA is 20% of basicpay. Define calcTax() method to calculate the income tax of an employee using rate of tax is 20% of grosssal if it is less than 90000 otherwise tax is 25% of grosssal.&lt;a class="anchor" href="#create-a-class-employee-with-basicpay-as-data-member-use-constructors-and-destructor-along-with-display-to-display-valuers-of-employee-object-and-calcgrosssal-method-to-find-out-the-gross-amount-from-the-given-formula-grosssal-basicpay--da--hra-where-da--hra-can-be-calculated-as-follows---if-basicpay-is-greater-than-or-equal-to-8000-da-is-20-of-basic-pay--hra-is-25-of-basic-pay-otherwise-da-is-15-of-basic-pay--hra-is-20-of-basicpay-define-calctax-method-to-calculate-the-income-tax-of-an-employee-using-rate-of-tax-is-20-of-grosssal-if-it-is-less-than-90000-otherwise-tax-is-25-of-grosssal"&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-C++" data-lang="C++"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&amp;lt;iostream&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Employee&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;unsigned&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; basicpay;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Employee(){basicpay &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Employee(&lt;span style="color:#66d9ef"&gt;unsigned&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a){basicpay &lt;span style="color:#f92672"&gt;=&lt;/span&gt; a;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Employee(Employee &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;a){basicpay &lt;span style="color:#f92672"&gt;=&lt;/span&gt; a.basicpay;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;~&lt;/span&gt;Employee(){cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Distroctor called&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;calcGrossSal&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; DA, HRA;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (basicpay&lt;span style="color:#f92672"&gt;&amp;gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;8000&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 DA &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;20.0&lt;/span&gt;; HRA &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;25.0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		 DA &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;15.0&lt;/span&gt;; HRA &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;20.0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; DA &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (DA&lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;100.0&lt;/span&gt;)&lt;span style="color:#f92672"&gt;/&lt;/span&gt;basicpay;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; HRA &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (HRA&lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;100.0&lt;/span&gt;)&lt;span style="color:#f92672"&gt;/&lt;/span&gt;basicpay;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; basicpay &lt;span style="color:#f92672"&gt;+&lt;/span&gt; DA &lt;span style="color:#f92672"&gt;+&lt;/span&gt; HRA;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;calcTax&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;float&lt;/span&gt; taxRate;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; calcGrossSal()&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;90000&lt;/span&gt; &lt;span style="color:#f92672"&gt;?&lt;/span&gt; taxRate &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;20.0&lt;/span&gt; &lt;span style="color:#f92672"&gt;:&lt;/span&gt; taxRate &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;25.0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; (calcGrossSal()&lt;span style="color:#f92672"&gt;*&lt;/span&gt;taxRate)&lt;span style="color:#f92672"&gt;/&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;100.0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;display&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Basic Pay: &amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;basicpay&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Gross Sale: &amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;calcGrossSal()&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Tax: &amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;calcTax()&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Employee a(&lt;span style="color:#ae81ff"&gt;10000&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; a.display();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/Practice/302.-Point/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/Practice/302.-Point/</guid><description>&lt;h4 id="write-a-program-that-uses-a-class-called-point-to-model-a-point-define-three-points-and-have-the-user-input-values-to-two-of-them-using-getinfo-method-then-set-the-third-point-equal-to-the-sum-of-the-other-two-and-display-the-value-of-the-new-point-using-findsum-and-show-methods-of-the-class"&gt;Write a program that uses a class called Point to model a point. Define three points, and have the user input values to two of them using getInfo() method. Then set the third point equal to the sum of the other two, and display the value of the new point using findSum() and show() methods of the class.&lt;a class="anchor" href="#write-a-program-that-uses-a-class-called-point-to-model-a-point-define-three-points-and-have-the-user-input-values-to-two-of-them-using-getinfo-method-then-set-the-third-point-equal-to-the-sum-of-the-other-two-and-display-the-value-of-the-new-point-using-findsum-and-show-methods-of-the-class"&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-C++" data-lang="C++"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&amp;lt;iostream&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Point&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a, b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point(){a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;b &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a, &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; b){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;a &lt;span style="color:#f92672"&gt;=&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;b &lt;span style="color:#f92672"&gt;=&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point(Point &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;a){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;a &lt;span style="color:#f92672"&gt;=&lt;/span&gt; a.a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;b &lt;span style="color:#f92672"&gt;=&lt;/span&gt; a.b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;~&lt;/span&gt;Point(){cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Distroctor called&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point &lt;span style="color:#a6e22e"&gt;findSum&lt;/span&gt;(Point x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; Point(&lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;a&lt;span style="color:#f92672"&gt;+&lt;/span&gt;x.a, &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;b&lt;span style="color:#f92672"&gt;+&lt;/span&gt;x.b);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;show&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;a&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;,&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;b&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a, b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;First point: &amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt;a&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt;b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point a1(a,b);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;&lt;span style="color:#e6db74"&gt;Second point: &amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt;a&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt;b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point a2(a,b);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Point j &lt;span style="color:#f92672"&gt;=&lt;/span&gt; a1.findSum(a2);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; j.show();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/300.-Type-Conversion-Constructor-Overloading/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/docs/Notes/OOPS-with-C++/300.-Type-Conversion-Constructor-Overloading/</guid><description>&lt;h1 id="type-conversion"&gt;Type Conversion&lt;a class="anchor" href="#type-conversion"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id="constructor"&gt;constructor&lt;a class="anchor" href="#constructor"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id="overloading"&gt;overloading&lt;a class="anchor" href="#overloading"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-C++" data-lang="C++"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&amp;lt;iostream&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Time&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; h, m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Time() { h&lt;span style="color:#f92672"&gt;=&lt;/span&gt;m&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Time(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; x, &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; y) { h&lt;span style="color:#f92672"&gt;=&lt;/span&gt;x; m&lt;span style="color:#f92672"&gt;=&lt;/span&gt;y; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Time(&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; Time &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;t) { h &lt;span style="color:#f92672"&gt;=&lt;/span&gt;t.h; m&lt;span style="color:#f92672"&gt;=&lt;/span&gt;t.m; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#75715e"&gt;// Conversion from int to Time
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Time(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; t) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 h &lt;span style="color:#f92672"&gt;=&lt;/span&gt; t&lt;span style="color:#f92672"&gt;/&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 m &lt;span style="color:#f92672"&gt;=&lt;/span&gt; t&lt;span style="color:#f92672"&gt;%&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#75715e"&gt;// Conversion from Time to int
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;inline&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;operator&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;int&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; h&lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60&lt;/span&gt; &lt;span style="color:#f92672"&gt;+&lt;/span&gt; m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#75715e"&gt;// Getter methods for Distance conversion
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;getHours&lt;/span&gt;() &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; h; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;getMinutes&lt;/span&gt;() &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; m; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;display&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; h &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;h &amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; m &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Distance&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; km;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Distance() { km&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Distance(&lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; k) { km&lt;span style="color:#f92672"&gt;=&lt;/span&gt;k; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#75715e"&gt;// Conversion from Time to Distance (5 km/h speed)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 Distance(&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; Time &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;t) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; totalHours &lt;span style="color:#f92672"&gt;=&lt;/span&gt; t.getHours() &lt;span style="color:#f92672"&gt;+&lt;/span&gt; (t.getMinutes()&lt;span style="color:#f92672"&gt;/&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60.0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 km &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;5.0&lt;/span&gt; &lt;span style="color:#f92672"&gt;*&lt;/span&gt; totalHours;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;display&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; km &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34; km&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// User-defined to built-in
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Time t1(&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;30&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; minutes &lt;span style="color:#f92672"&gt;=&lt;/span&gt; t1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Minutes: &amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; minutes &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl; &lt;span style="color:#75715e"&gt;// Output: 150
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Built-in to user-defined
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Time t2 &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;150&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Time from 150 minutes: &amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; t2.display(); &lt;span style="color:#75715e"&gt;// Output: 2h 30m
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// User-defined to user-defined
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Distance d1 &lt;span style="color:#f92672"&gt;=&lt;/span&gt; t1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Distance traveled: &amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; d1.display(); &lt;span style="color:#75715e"&gt;// Output: 12.5 km
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Showcases</title><link>https://v2k-veetokay.github.io/Learn_With_Me/showcases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://v2k-veetokay.github.io/Learn_With_Me/showcases/</guid><description>&lt;!-- raw HTML omitted --&gt;
 &lt;h1 id="at-the-moment-this-page-is-empty"&gt;At the moment this page is empty&lt;a class="anchor" href="#at-the-moment-this-page-is-empty"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;!-- raw HTML omitted --&gt;</description></item></channel></rss>
