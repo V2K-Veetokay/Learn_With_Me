@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/OOPS with C++/Practice/301. Employee - Basic Pay.md",
+                "file": "content/docs/Notes/OOPS with C++/Assignment.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "301. Employee - Basic Pay"
+              "title": "Assignment"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/OOPS with C++/Assignment.md",
+                "file": "content/docs/Notes/OOPS with C++/Inheritance - Constructor.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Assignment"
+              "title": "Inheritance - Constructor"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "_index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,8 +213,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "acf50de52f6f9189",
+  "active": "a0aab7b488e23d7a",
   "lastOpenFiles": [
+    "public/docs/Notes/OOPS-with-C++/Inheritance-Constructor/index.html",
+    "public/docs/Notes/OOPS-with-C++/Inheritance-Constructor",
+    "public/en.search.min.d8dfd0d40dce6e898e17691ee283233dc4deafb1854b02917989c482eac662a3.js",
+    "public/en.search-data.min.ae318a88ddb1864f6b114fe7c979d9c9a159d49a489426053e0951636ceecdf3.json",
+    "content/docs/Notes/OOPS with C++/Inheritance - Constructor.md",
+    "content/docs/Notes/OOPS with C++/Assignment.md",
     "public/en.search.min.63e7b2beebc737ebfd99b4c3c2d749256eb5b00d1db6cd14d35dc851db863313.js",
     "public/en.search-data.min.4d757132212d0b3a01c12939daa414774d80427ee57cfc6a30ac8896f2991cd8.json",
     "public/docs/Notes/OOPS-with-C++/Assignment/index.html",
@@ -223,13 +228,8 @@
     "public/en.search.min.14062c1281592c3fd03e25a442efba4f2c03b89540fe059b8078c3ba9ab53ff6.js",
     "public/en.search-data.min.26563859cd8d1495ec67317756f0cbeaff488cbe58c241481bbe6e6d9b0c4e0e.json",
     "content/docs/Notes/OOPS with C++/Practice/301. Employee - Basic Pay.md",
-    "content/docs/Notes/OOPS with C++/Assignment.md",
     "content/docs/Notes/OOPS with C++/Practice/_index.md",
     "public/docs/Notes/OOPS-with-C++/Practice/index.xml",
-    "public/docs/Notes/OOPS-with-C++/Practice/302.-Point/index.html",
-    "public/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay/index.html",
-    "public/docs/Notes/OOPS-with-C++/Practice/index.html",
-    "public/docs/Notes/OOPS-with-C++/Practice/302.-Point",
     "content/docs/Notes/C programming/Unit-1/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/111. Approaches to problem solving.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
@@ -251,7 +251,6 @@
     "content/showcases.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/123. Structure of C program.md",
     "content/docs/Notes/C programming/Unit-1/Basics of C/124. Compiling C program.md",
-    "content/docs/Notes/C++/without-toc.md",
     "public/logo.png",
     "public/favicon (copy 1).png",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/Flowchart.sandwich.png",

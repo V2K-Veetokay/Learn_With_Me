@@ -281,16 +281,53 @@ Create a class Rational which represents a numerical value by two double values-
 ```
 
 
-## Q-8:
+## Q-8: Square
 Create a class Square with side as data member. Define constructors and destructor along with methods to find area, perimeter and cost of painting of the Square object.
 
 ``` C++
+#include<iostream>
 
+using namespace std;
+
+template<class T>
+class Square{
+		T side;
+	public:
+		Square(T s){side = s;}
+		~Square(){}
+		
+		T area(){
+			return side*side;
+		}
+		
+		T perimeter(){
+			return 4*side;
+		}
+		
+		double cost(T c){
+			return side*side*c;	
+		}
+		
+		void show(){
+			cout<<"Area: "<<area()<<endl;
+			cout<<"Perimeter: "<<perimeter()<<endl;
+			cout<<"Cost: "<<cost(2)<<endl;
+		}
+};
+
+int main(){
+	Square s1(5.5);
+	s1.show();
+	
+	return 0;
+}
 ```
 
 ### Output
 ```
-
+Area: 30.25
+Perimeter: 22
+Cost: 60.5
 ```
 
 
@@ -298,12 +335,53 @@ Create a class Square with side as data member. Define constructors and destruct
 Imagine a tollbooth with a class called TollBooth. The two data items are a type unsigned int to hold the total number of cars, and a type double to hold the total amount of money collected. A constructor initializes both these to 0. A member function called payingCar ( ) increments the car total and adds 0.50 to the cash total. Another function, called nopayCar ( ), increments the car total but adds nothing to the cash total. Finally, a member function called display() displays the two totals. This program should allow the user to push one key to count a paying car, and another to count a nonpaying car.
 
 ``` C++
+#include<iostream>
 
+using namespace std;
+
+class TollBooth{
+		unsigned totalCar;
+		double totalAmount;
+	public:
+		TollBooth(){totalCar=0; totalAmount=0.0;}
+		
+		void payingCar(){
+			totalCar++;
+			totalAmount+=0.50;
+		}
+		
+		void nopayCar(){
+			totalCar++;
+		}
+		
+		void display(){
+			cout<<"Total Cars: "<<totalCar<<endl;
+			cout<<"Total Amount: "<<totalAmount<<endl;
+		}
+};
+
+int main(){
+	TollBooth t1;
+	
+	t1.payingCar();
+	t1.payingCar();
+	t1.payingCar();
+	t1.payingCar();
+	t1.payingCar();
+	
+	t1.nopayCar();
+	t1.nopayCar();
+	t1.nopayCar();
+	
+	t1.display();
+	return 0;
+}
 ```
 
 ### Output
 ```
-
+Total Cars: 8
+Total Amount: 2.5
 ```
 
 
