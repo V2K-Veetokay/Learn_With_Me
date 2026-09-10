@@ -63,7 +63,7 @@ Distroctor called
 ```
 
 
-## Q-2: Point 
+## Q-2: Point
  Write a program that uses a class called Point to model a point. Define three points, and have the user input values to two of them using getInfo() method. Then set the third point equal to the sum of the other two, and display the value of the new point using findSum() and show() methods of the class.
 
 ``` C++
@@ -112,8 +112,10 @@ int main(){
 
 ### Output
 ```
-First point: 
-Second point: Distroctor called
+First point: 2 3
+
+Second point: 4 5
+Distroctor called
 6,8
 Distroctor called
 Distroctor called
@@ -183,9 +185,344 @@ int main() {
 ### Output
 ```
 Enter first matrix (3x3):
+0 1 2 3 4 5 6 7 8
 Enter second matrix (3x3):
+9 8 7 6 5 4 3 2 1
 Resultant matrix:
 12 9 6 
 66 54 42 
 120 99 78
+```
+
+
+## Q-4: Phone Number
+A phone number, such as (91) 120-4370000, can be thought of as having three parts: the country code (91), city code (120) and the number (4370000). Write a program that uses a class Phone to store these three parts of a phone number separately. Create two objects of type phone. Initialize one, and have the user input a number for the other one. Then display both numbers.
+
+``` C++
+#include<iostream>
+
+using namespace std;
+
+class Phone{
+		int countryCode, cityCode, number;
+	public:
+		Phone(int x, int y, int z){
+			countryCode = x;
+			cityCode = y;
+			number = z;
+		}
+		void display(){
+			cout<<'('<<countryCode<<')'<<' '<<cityCode<<'-'<<number<<endl;
+		}
+};
+
+int main(){
+	Phone n1(91, 120, 4370000);
+	
+	int x,y,z;
+	cout<<"Enter Phone No.: (Ex: 91 321 3249532)"<<endl;
+	cin>>x>>y>>z;
+	Phone n2(x, y, z);
+	
+	cout<<endl;
+	n1.display();
+	n2.display();
+	
+	return 0;
+}
+```
+
+### Output
+```
+Enter Phone No.: (Ex: 91 321 3249532)
+65 375 1451687
+
+(91) 120-4370000
+(65) 375-3451687
+```
+
+
+## Q-5:
+Create two classes DistanceMks and DistanceCgs which store the value of distances. DistanceMks stores distances in metres and centimeters and DistanceCgs in feet and inches. Write a program that can read values for the class objects and add one object of DistanceMks with another object of DistanceCgs. Use a friend function to carry out the addition operation.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-6:
+Create a class Sphere with radius as data member. Use constructor and destructor along with methods tp find volume and surface area of the sphere object.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-7:
+Create a class Rational which represents a numerical value by two double values- numerator & denominator. Include the following public member Functions: constructor with no arguments (default), constructor with two arguments, reduce( ) that reduces the rational number by eliminating the highest common factor between the numerator and denominator, and findSum() to add two rational number.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-8:
+Create a class Square with side as data member. Define constructors and destructor along with methods to find area, perimeter and cost of painting of the Square object.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-9:
+Imagine a tollbooth with a class called TollBooth. The two data items are a type unsigned int to hold the total number of cars, and a type double to hold the total amount of money collected. A constructor initializes both these to 0. A member function called payingCar ( ) increments the car total and adds 0.50 to the cash total. Another function, called nopayCar ( ), increments the car total but adds nothing to the cash total. Finally, a member function called display() displays the two totals. This program should allow the user to push one key to count a paying car, and another to count a nonpaying car.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-10:
+Write a program to create a class Time with hours and minutes as data members. Use constructors to initialize data members and a show() method to display values. Use findSum() and findDiff() methods to find the sum and differences of two Time objects and display the values.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-11:
+Create a class Distance with km and meter as data members. Use constructors to initialize data members and display() method to display the values. Use findSum() and findDiff() methods to find the sum and differences of two Distance objects and display their values.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-12:
+Create a class BirthDate with day, month and year as data members. Use constructors and destructors in the class along with showDateOfBirth() method to display birthdate of a person. Find the age of the person as of today.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-13:
+Create a class Vector with hor and ver as data members. Use constructors and destructor along with showVector() method to display a Vector object and findLength() method to find the length of the vector in the class. Define findSum() to find the sum of Vector objects and display the values.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-14:
+Create a class Student with roll, percentage, age as data members. Use constructors and destructor along with showStudent() method to display values of the Student object and showGrade() on the basis of percentage of marks of the Student object in the class.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-15:
+Create a class Rectangle with length and breadth as data members. Use constructors and destructor along with methods to calculate area and perimeter of the rectangle. Define costPaint() in the Rectangle class to find the cost of paint per unit area entered by the user at run time. Use default argument for the cost of paint per unit area if user did not enter the cost.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-16:
+Create a class Sphere with radius as data member. Use constructor and destructor along with methods to find volume and surface area of the sphere object.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-17:
+Create a class Point with x and y as data members. Use constructors and destructor along with methods to display values of the Point objects and to find the gradient of a line passing through the two Point objects.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-18:
+Create a class Student with marks for three subjects phy, chem, and math. Use constructors and destructor along with methods to display values and to find sum of marks and percentage of marks. Also display grade on the basis of percentage of marks of the student.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-19:
+Create a class Temperature with degcelcius as data member in degree celcius. Use constructors and destructor along with methods for displaying values and convert to the data member from Celcius to Fahrenheit.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-20:
+Create class Product with pid, price and quantity as data members. Use constructor and destructor along with methods to display values of a Product object and to find the total invoice value of ordering number of quantities of a particular product. Use default method argument for the quantity of product.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-21:
+Create a class Complex with real and imaginary as data members. Use constructors and destructor along with methods to display values of the complex numbers. Define findSum() and findDiff() methods to find the sum and differences of the two complex objects.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-22:
+Create a class Line with gradient and intercept as data members. Use constructors and destructor along with show() method to display the equation of line. Define method checkLines() to test whether two lines are perpendicular or parallel.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-23:
+Create a class Vector with x and y as data members. Use constructors and destructor along with show() method to display values. Define dotProduct() and findSum() methods to find scaler product and sum of two vectors respectively.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-24:
+Create a class Complex with real and imaginary as data members. Use constructors and destructor along with display() method to show values of the complex numbers. Define findMod() methods to find the modulus of complex number object.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-25:
+Create a class Vector with hor and ver as data members. Use constructors and destructor along with showVector() method to display a Vector object and findUnit() method to find the length of the unit vector along the Vector object in the class.
+
+``` C++
+
+```
+
+### Output
+```
+
+```
+
+
+## Q-26:
+Create a class Customer with custid, productid, price, quantity as data members. Use constructors and destructor along with display() method to display values of the data members. Define calcInvoice() method to generate invoice for a customer on purchasing products.
+
+``` C++
+
+```
+
+### Output
+```
+
 ```

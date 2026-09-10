@@ -214,8 +214,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "444aed0da926c373",
+  "active": "acf50de52f6f9189",
   "lastOpenFiles": [
+    "public/en.search.min.63e7b2beebc737ebfd99b4c3c2d749256eb5b00d1db6cd14d35dc851db863313.js",
+    "public/en.search-data.min.4d757132212d0b3a01c12939daa414774d80427ee57cfc6a30ac8896f2991cd8.json",
     "public/docs/Notes/OOPS-with-C++/Assignment/index.html",
     "public/docs/Notes/OOPS-with-C++/Assignment",
     "public/en.search.min.14062c1281592c3fd03e25a442efba4f2c03b89540fe059b8078c3ba9ab53ff6.js",
@@ -228,8 +230,6 @@
     "public/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay/index.html",
     "public/docs/Notes/OOPS-with-C++/Practice/index.html",
     "public/docs/Notes/OOPS-with-C++/Practice/302.-Point",
-    "public/docs/Notes/OOPS-with-C++/Practice/301.-Employee-Basic-Pay",
-    "public/docs/Notes/OOPS-with-C++/Practice",
     "content/docs/Notes/C programming/Unit-1/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/111. Approaches to problem solving.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",
