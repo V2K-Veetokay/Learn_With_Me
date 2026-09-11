@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Notes/OOPS with C++/Inheritance - Constructor.md",
+                "file": "content/docs/Notes/OOPS with C++/301. Inheritance - Constructor.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Inheritance - Constructor"
+              "title": "301. Inheritance - Constructor"
             }
           },
           {
@@ -108,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "29ac64cb4c3f2640",
@@ -215,21 +216,21 @@
   },
   "active": "a0aab7b488e23d7a",
   "lastOpenFiles": [
+    "public/docs/Notes/OOPS-with-C++/301.-Inheritance-Constructor/index.html",
+    "public/docs/Notes/OOPS-with-C++/301.-Inheritance-Constructor",
+    "public/en.search.min.53d745e5b4fcb770134e26db39ce644a8103c3c2fdd5bcccb9e53adb2540c83a.js",
+    "public/en.search-data.min.519e81218eca910c9ceb2d671b1e1dcf5a73d9bb3a0032d5ab7b262ced389a1e.json",
+    "content/docs/Notes/OOPS with C++/301. Inheritance - Constructor.md",
+    "content/docs/Notes/OOPS with C++/Assignment.md",
     "public/docs/Notes/OOPS-with-C++/Inheritance-Constructor/index.html",
     "public/docs/Notes/OOPS-with-C++/Inheritance-Constructor",
     "public/en.search.min.d8dfd0d40dce6e898e17691ee283233dc4deafb1854b02917989c482eac662a3.js",
     "public/en.search-data.min.ae318a88ddb1864f6b114fe7c979d9c9a159d49a489426053e0951636ceecdf3.json",
-    "content/docs/Notes/OOPS with C++/Inheritance - Constructor.md",
-    "content/docs/Notes/OOPS with C++/Assignment.md",
     "public/en.search.min.63e7b2beebc737ebfd99b4c3c2d749256eb5b00d1db6cd14d35dc851db863313.js",
     "public/en.search-data.min.4d757132212d0b3a01c12939daa414774d80427ee57cfc6a30ac8896f2991cd8.json",
     "public/docs/Notes/OOPS-with-C++/Assignment/index.html",
-    "public/docs/Notes/OOPS-with-C++/Assignment",
-    "public/en.search.min.14062c1281592c3fd03e25a442efba4f2c03b89540fe059b8078c3ba9ab53ff6.js",
-    "public/en.search-data.min.26563859cd8d1495ec67317756f0cbeaff488cbe58c241481bbe6e6d9b0c4e0e.json",
     "content/docs/Notes/OOPS with C++/Practice/301. Employee - Basic Pay.md",
     "content/docs/Notes/OOPS with C++/Practice/_index.md",
-    "public/docs/Notes/OOPS-with-C++/Practice/index.xml",
     "content/docs/Notes/C programming/Unit-1/_index.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/111. Approaches to problem solving.md",
     "content/docs/Notes/C programming/Unit-1/Basics of Programming/_index.md",

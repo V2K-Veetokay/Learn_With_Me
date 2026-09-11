@@ -331,7 +331,7 @@ Cost: 60.5
 ```
 
 
-## Q-9:
+## Q-9: TollBooth
 Imagine a tollbooth with a class called TollBooth. The two data items are a type unsigned int to hold the total number of cars, and a type double to hold the total amount of money collected. A constructor initializes both these to 0. A member function called payingCar ( ) increments the car total and adds 0.50 to the cash total. Another function, called nopayCar ( ), increments the car total but adds nothing to the cash total. Finally, a member function called display() displays the two totals. This program should allow the user to push one key to count a paying car, and another to count a nonpaying car.
 
 ``` C++
@@ -385,42 +385,195 @@ Total Amount: 2.5
 ```
 
 
-## Q-10:
+## Q-10: Time
 Write a program to create a class Time with hours and minutes as data members. Use constructors to initialize data members and a show() method to display values. Use findSum() and findDiff() methods to find the sum and differences of two Time objects and display the values.
 
 ``` C++
+#include <iostream>
 
+using namespace std;
+
+class Time {
+	int hours, minutes;
+public:
+	Time(int h, int m): hours(h), minutes(m){}
+	
+	Time findSum(Time t){
+		return Time(hours+t.hours, minutes+t.minutes);
+	}
+	
+	Time findDiff(Time t){
+		return Time(hours-t.hours, minutes-t.minutes);
+	}
+	
+	void display() {
+		cout << hours << ':' << minutes << endl;
+	}
+}; 
+
+int main() {
+	Time t1(2, 20);
+	Time t2(3, 30);
+	Time t3 = t1.findSum(t2);
+	Time t4 = t2.findDiff(t1);
+	
+	t1.display();
+	t2.display();
+	t3.display();
+	t4.display();
+	return 0;
+}
 ```
 
 ### Output
 ```
-
+2:20
+3:30
+5:50
+1:10
 ```
 
 
-## Q-11:
+## Q-11: Distance
 Create a class Distance with km and meter as data members. Use constructors to initialize data members and display() method to display the values. Use findSum() and findDiff() methods to find the sum and differences of two Distance objects and display their values.
 
 ``` C++
+#include <iostream>
 
+using namespace std;
+
+class Distance {
+	int km, m;
+public:
+	Distance(int kilometer, int meter): km(kilometer), m(meter){}
+	
+	Distance findSum(Distance d){
+		return Distance(km+d.km, m+d.m);
+	}
+	
+	Distance findDiff(Distance d){
+		return Distance(km-d.km, m-d.m);
+	}
+	
+	void display() {
+		cout << km << "km" <<' '<< m << 'm' << endl;
+	}
+}; 
+
+int main() {
+	Distance d1(2, 20);
+	Distance d2(3, 30);
+	Distance d3 = d1.findSum(d2);
+	Distance d4 = d2.findDiff(d1);
+	
+	d1.display();
+	d2.display();
+	d3.display();
+	d4.display();
+	return 0;
+}
 ```
 
 ### Output
 ```
-
+2km 20m
+3km 30m
+5km 50m
+1km 10m
 ```
 
 
-## Q-12:
+## Q-12: Birth Date - Age
 Create a class BirthDate with day, month and year as data members. Use constructors and destructors in the class along with showDateOfBirth() method to display birthdate of a person. Find the age of the person as of today.
 
 ``` C++
+#include <iostream>
+using namespace std;
 
+const int currentYear = 2026;
+const int currentMonth = 9;
+const int currentDay = 11;
+
+int daysInMonth(int month, int year) {
+	if (month == 2) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            return 29;
+        return 28;
+    }
+    switch (month) {
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            return 31;
+        case 4: case 6: case 9: case 11:
+            return 30;
+        default:
+            return 30;
+    }
+}
+
+class BirthDate {
+    int day, month, year;
+
+public:
+    BirthDate(int day, int month, int year)
+        : day(day), month(month), year(year) {}
+
+    ~BirthDate() {}
+
+    void showDateOfBirth() {
+        cout << day << '/' << month << '/' << year << endl;
+    }
+
+    BirthDate age() const {
+        if (currentYear < year ||
+            (currentYear == year && currentMonth < month) ||
+            (currentYear == year && currentMonth == month && currentDay < day)) {
+            cout << "Incorrect DOB" << endl;
+            return BirthDate(0, 0, 0);
+        }
+
+        int ageYears = currentYear - year;
+        int ageMonths = currentMonth - month;
+        int ageDays = currentDay - day;
+
+        if (ageDays < 0) {
+            ageMonths--;
+            int prevMonth = currentMonth - 1;
+            int prevMonthYear = currentYear;
+            if (prevMonth == 0) {
+                prevMonth = 12;
+                prevMonthYear--;
+            }
+            ageDays += daysInMonth(prevMonth, prevMonthYear);
+        }
+
+        if (ageMonths < 0) {
+            ageYears--;
+            ageMonths += 12;
+        }
+
+        return BirthDate(ageDays, ageMonths, ageYears);
+    }
+
+    void showAge() {
+        cout << year << " years, " << month << " months, " << day << " days" << endl;
+    }
+};
+
+int main() {
+    BirthDate b1(2, 4, 2020);
+    b1.showDateOfBirth();
+
+    BirthDate age = b1.age();
+    age.showAge();
+
+    return 0;
+}
 ```
 
 ### Output
 ```
-
+2/4/2020
+6 years, 5 months, 9 days
 ```
 
 
